@@ -4,6 +4,7 @@ import '/public/homepage.css'
 function HomePage() {
     return (
         <div id='homepage-container'>
+            <h1>IRONBEERS LAB</h1>
             <Link to='/pages/AllBeersPage'>
                 <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/vintage-beer-can-collection-max-huber.jpg" alt="All Beers Image" />
                 <h2>All Beers</h2>
