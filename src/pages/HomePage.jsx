@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import '/public/homepage.css'
 
 function HomePage() {
+
+    
     return (
         <div id='homepage-container'>
             <h1>IRONBEERS LAB</h1>
