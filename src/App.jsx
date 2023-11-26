@@ -18,9 +18,9 @@ function App() {
 
           <Route path='/' element={<HomePage />} />
           <Route path='/pages/AllBeersPage' element={<AllBeersPage />} />
-          <Route path='/random-beer' element={<RandomBeerPage />} />
+          <Route path='/pages/RandomBeerPage' element={<RandomBeerPage />} />
           <Route path='/new-beer' element={<AddBeerPage />} />
-          <Route path='/beers/:beerId' element={<BeerDetailsPage />} />
+          <Route path='/pages/:beerId' element={<BeerDetailsPage />} />
           
 
         </Routes>

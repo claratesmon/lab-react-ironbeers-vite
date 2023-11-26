@@ -12,7 +12,7 @@ function HomePage() {
                 <h2>All Beers</h2>
 
                 </Link>
-            <Link to='/RandomBeerPage'>
+            <Link to='/pages/RandomBeerPage'>
                 <img src="https://assets.bonappetit.com/photos/57bf238fa184a3c9209db241/master/w_2000,h_1400,c_limit/beer-design-opener.jpg" alt="Random Beer Image" /></Link>
                 <h2>Random Beer</h2>
             <Link to='/AddBeerPage'>

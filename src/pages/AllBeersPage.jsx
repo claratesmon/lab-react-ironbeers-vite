@@ -28,8 +28,9 @@ function AllBeersPage() {
         <ul>
             {
                 beers.map((eachBeer)=>{
+                  console.log(eachBeer._id)
                     return(
-                        <Link to={`/beers/${eachBeer._id}`}>
+                        <Link to={`/pages/${eachBeer._id}`}>
                         <div key={eachBeer._id}>
                         <h2>{eachBeer.name}</h2>
                         <img src={eachBeer.image_url} alt={eachBeer.name} />
