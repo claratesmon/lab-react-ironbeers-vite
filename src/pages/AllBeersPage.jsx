@@ -4,11 +4,11 @@ import { useState, useEffect } from "react";
 
 
 function AllBeersPage() {
-    const [beers, setBeers] = useState([]);
+  const [beers, setBeers] = useState([]);
 
-    useEffect(() => {
-        getBeers();
-      }, [])
+  useEffect(() => {
+    getBeers();
+  }, [])
 
   const getBeers = async () => {
     try {
@@ -21,32 +21,32 @@ function AllBeersPage() {
       console.log(error);
     }
   }
-    return(
-        <>
-        
-        <h1>ALL BEERS</h1>
-        <ul>
-            {
-                beers.map((eachBeer)=>{
-                  console.log(eachBeer._id)
-                    return(
-                        <Link to={`/pages/${eachBeer._id}`}>
-                        <div key={eachBeer._id}>
-                        <h2>{eachBeer.name}</h2>
-                        <img src={eachBeer.image_url} alt={eachBeer.name} />
-                        <p>{eachBeer.tagline}</p>
-                        <p>{eachBeer.contributed_by}</p>
-                        </div>
-                        </Link>
-                        
-                        
-                    )
-                })
-            }
-        </ul>
+  return (
+    <>
 
-        </>
-    )
+      <h1>ALL BEERS</h1>
+      <ul>
+        {
+          beers.map((eachBeer) => {
+            console.log(eachBeer._id)
+            return (
+              <Link to={`/beers/${eachBeer._id}`}>
+                <div key={eachBeer._id}>
+                  <h2>{eachBeer.name}</h2>
+                  <img src={eachBeer.image_url} alt={eachBeer.name} />
+                  <p>{eachBeer.tagline}</p>
+                  <p>{eachBeer.contributed_by}</p>
+                </div>
+              </Link>
+
+
+            )
+          })
+        }
+      </ul>
+
+    </>
+  )
 }
 
 export default AllBeersPage;

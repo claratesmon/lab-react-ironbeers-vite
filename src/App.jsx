@@ -17,10 +17,10 @@ function App() {
         <Routes>
 
           <Route path='/' element={<HomePage />} />
-          <Route path='/pages/AllBeersPage' element={<AllBeersPage />} />
-          <Route path='/pages/RandomBeerPage' element={<RandomBeerPage />} />
+          <Route path='/beers' element={<AllBeersPage />} />
+          <Route path='/random-beer' element={<RandomBeerPage />} />
           <Route path='/new-beer' element={<AddBeerPage />} />
-          <Route path='/pages/:beerId' element={<BeerDetailsPage />} />
+          <Route path='/beers/:beerId' element={<BeerDetailsPage />} />
           
 
         </Routes>
